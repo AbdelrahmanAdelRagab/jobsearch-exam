@@ -1,0 +1,70 @@
+job search
+obj :
+Filter option to get the required job.
+Handles the user’s data.
+Handles the company’s data.
+Handles the Job Applications
+gonna use ..
+- Node.js
+- Express
+- MongoDB (or another database of choice)
+- JWT for authentication
+- Bcrypt for password hashing
+ API Features:  
+1.   Job Search:  
+   - Endpoint to search for jobs based on keywords, location, etc.
+   - Filtering options for job type, salary, etc.
+2.   User Management:  
+   - User registration and login.
+   - Profile management (update details).
+   - Authentication using JWT.
+3.   Company Management:  
+   - Endpoint to manage company data.
+   - Retrieve company information.
+4.   Job Applications:  
+   - Submit job applications.
+   - Check the status of applications.
+  Development Steps:  
+1.   Setup Environment:  
+   - Initialize a Node.js project.
+   - Install necessary packages: `express`, `mongoose`, `jsonwebtoken`, `bcrypt`, `dotenv`, etc.
+   - Set up a `.env` file for configuration variables.
+2.   Database Configuration:  
+   - Connect to MongoDB using Mongoose.
+   - Define schemas and models for Users, Jobs, and Applications.
+3.   API Development:  
+   -   User Routes:  
+     - `/register` - Create a new user account.
+     - `/login` - Authenticate user and return a token.
+     - `/profile` - Get and update user profile.
+   -   Job Routes:  
+     - `/jobs` - Get a list of jobs (with search and filter options).
+     - `/jobs/:id` - Get details of a specific job.
+   -   Company Routes:  
+     - `/companies` - Get a list of companies.
+     - `/companies/:id` - Get details of a specific company.
+   -   Application Routes:  
+     - `/apply` - Submit a job application.
+     - `/applications` - Get user applications.
+4.   Middleware:  
+   - Implement authentication middleware using JWT.
+   - Protect routes that require user login.
+5.   Testing:  
+   - Test API endpoints using Postman .
+   - Ensure data validation and error handling are working correctly.
+6.   Deployment:  
+      - just deploy 
+  Additional Notes:  
+- Ensure security (JWT , hashing password)
+- Write documentation for API endpoints.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+During coding notes :
+
+.env is better at security 3shan btkeep el jwt secret key fe elser any way don't forget to put it in git ignore 
+I should learn how to use the postman shit 
+
+fuck chatGpt
+حسبي الله و نعم الوكيل 
+search jsDocs btt3ml ezay

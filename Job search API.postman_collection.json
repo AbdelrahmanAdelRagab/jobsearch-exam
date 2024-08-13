@@ -1,0 +1,150 @@
+{
+	"info": {
+	  "_postman_id": "7d2aeedd-422e-4d90-80af-cda42deabe80",
+	  "name": "Job Search API",
+	  "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+	  {
+		"name": "User",
+		"item": [
+		  {
+			"name": "Signup",
+			"request": {
+			  "method": "POST",
+			  "header": [
+				{
+				  "key": "Content-Type",
+				  "value": "application/json"
+				}
+			  ],
+			  "body": {
+				"mode": "raw",
+				"raw": "{\n  \"firstName\": \"Ali\",\n  \"lastName\": \"Mohamed\",\n  \"username\": \"ali_mohamed\",\n  \"email\": \"ali@example.com\",\n  \"password\": \"password123\",\n  \"recoveryEmail\": \"ali.recovery@example.com\",\n  \"DOB\": \"1990-01-01\",\n  \"mobileNumber\": \"1234567890\",\n  \"role\": \"User\",\n  \"status\": \"offline\"\n}"
+			  },
+			  "url": {
+				"raw": "http://localhost:3000/api/users/signup",
+				"protocol": "http",
+				"host": [
+				  "localhost"
+				],
+				"port": "3000",
+				"path": [
+				  "api",
+				  "users",
+				  "signup"
+				]
+			  }
+			},
+			"response": []
+		  }
+		]
+	  },
+	  {
+		"name": "Company",
+		"item": [
+		  {
+			"name": "Add Company",
+			"request": {
+			  "method": "POST",
+			  "header": [
+				{
+				  "key": "Content-Type",
+				  "value": "application/json"
+				}
+			  ],
+			  "body": {
+				"mode": "raw",
+				"raw": "{\n  \"companyName\": \"Tech Company\",\n  \"description\": \"Leading technology company\",\n  \"industry\": \"Technology\",\n  \"address\": \"Cairo, Egypt\",\n  \"numberOfEmployees\": \"100-500\",\n  \"companyEmail\": \"contact@techcompany.com\",\n  \"companyHR\": \"123456\"\n}"
+			  },
+			  "url": {
+				"raw": "http://localhost:3000/api/companies/add",
+				"protocol": "http",
+				"host": [
+				  "localhost"
+				],
+				"port": "3000",
+				"path": [
+				  "api",
+				  "companies",
+				  "add"
+				]
+			  }
+			},
+			"response": []
+		  }
+		]
+	  },
+	  {
+		"name": "Job",
+		"item": [
+		  {
+			"name": "Add Job",
+			"request": {
+			  "method": "POST",
+			  "header": [
+				{
+				  "key": "Content-Type",
+				  "value": "application/json"
+				}
+			  ],
+			  "body": {
+				"mode": "raw",
+				"raw": "{\n  \"jobTitle\": \"Front-End Developer\",\n  \"jobLocation\": \"Cairo, Egypt\",\n  \"workingTime\": \"full-time\",\n  \"seniorityLevel\": \"Junior\",\n  \"jobDescription\": \"Looking for an experienced front-end developer\",\n  \"technicalSkills\": [\"React\", \"HTML\", \"CSS\"],\n  \"softSkills\": [\"Communication\", \"Teamwork\"],\n  \"addedBy\": \"123456\"\n}"
+			  },
+			  "url": {
+				"raw": "http://localhost:3000/api/jobs/add",
+				"protocol": "http",
+				"host": [
+				  "localhost"
+				],
+				"port": "3000",
+				"path": [
+				  "api",
+				  "jobs",
+				  "add"
+				]
+			  }
+			},
+			"response": []
+		  }
+		]
+	  },
+	  {
+		"name": "Application",
+		"item": [
+		  {
+			"name": "Apply to Job",
+			"request": {
+			  "method": "POST",
+			  "header": [
+				{
+				  "key": "Content-Type",
+				  "value": "application/json"
+				}
+			  ],
+			  "body": {
+				"mode": "raw",
+				"raw": "{\n  \"jobId\": \"123456\",\n  \"userId\": \"789012\",\n  \"userTechSkills\": [\"React\", \"Node.js\"],\n  \"userSoftSkills\": [\"Communication\", \"Teamwork\"],\n  \"userResume\": \"http://example.com/resume.pdf\"\n}"
+			  },
+			  "url": {
+				"raw": "http://localhost:3000/api/applications/apply",
+				"protocol": "http",
+				"host": [
+				  "localhost"
+				],
+				"port": "3000",
+				"path": [
+				  "api",
+				  "applications",
+				  "apply"
+				]
+			  }
+			},
+			"response": []
+		  }
+		]
+	  }
+	]
+  }
+  
